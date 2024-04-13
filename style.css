@@ -34,7 +34,7 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 50px;
 }
 
 nav ul li{
@@ -389,17 +389,30 @@ nav .fa-solid{
 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url();
+        background-image: url(images/podcast-8520409_1920.jpg);
 
     }
 
+    
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+    margin-top: 20px;
+    font-size: 20px;
     }
 
-    .header-text hi{
-        font-size: 30px;
+    .header-text h1{
+    font-size: 20px;
+    margin-top: 20px;
+    }
+
+    .header-text h1 span {
+    color:peru;
+    }
+
+    
+
+    
+    .logo{
+    width: 70px;
     }
 
     
