@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24fe7adff4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="redirect-page">
+        <!-- Display the image while redirecting -->
+        <img src="/images/1712681165535.jpg" alt="Description of the image">
+
+        <!-- Optionally, you can add a message -->
+        <p>Redirecting to the website...</p>
+    </div>
+
+    <!-- Add a script to redirect after a delay -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://joshpee22.github.io/My-Portfolio/#header";
+        }, 5000); // Redirect after 5 seconds (adjust as needed)
+    </script>
+</body>
+</html>
