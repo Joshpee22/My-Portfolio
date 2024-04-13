@@ -169,35 +169,52 @@
         </div>
     </div>
     
-     <script>
+    <script>
+        // Function to open the side menu
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+    
+        // Function to close the side menu
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    
+        // Get all menu items
+        var menuItems = document.querySelectorAll("#sidemenu li a");
+    
+        // Add event listener to each menu item
+        menuItems.forEach(function(item) {
+            item.addEventListener("click", function() {
+                closemenu(); // Call closemenu() function when any menu item is clicked
+            });
+        });
+    
+        // Add event listener to the document to close the menu when clicked outside
+        document.addEventListener("click", function(event) {
+            // Check if the clicked element is not a part of the sidemenu or the menu opener button
+            if (!sidemenu.contains(event.target) && event.target !== document.querySelector(".fa-solid.fa-bars")) {
+                closemenu(); // Call closemenu() function to close the menu
+            }
+        });
+    
         var tablinks= document.getElementsByClassName("tab-links");
         var tabcontents= document.getElementsByClassName("tab-contents");
-
+    
         function opentab(tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
-
+    
             for(tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
-
+    
             document.getElementById(tabname).classList.add("active-tab");
             event.currentTarget.classList.add("active-link");
         }
-     </script>
-
-<script>
-    var sidemenu = document.getElementById('sidemenu');
-
-    function openmenu() {
-        sidemenu.style.right = "0"; // Fixed syntax: use dot notation for style properties, and correct the value
-    }
-
-    function closemenu() {
-        sidemenu.style.right = "-200px"; // Fixed syntax: use dot notation for style properties, and correct the value
-    }
-</script>
+    </script>
+    
   
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyudCqxFBR8ncSE2u9KvuIbfYRKUd4ScagaHswnle1Wyr00l1R-IeXBoPpDzzuNBCkEEw/exec'
