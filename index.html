@@ -175,7 +175,6 @@
     
    
     
-  
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyudCqxFBR8ncSE2u9KvuIbfYRKUd4ScagaHswnle1Wyr00l1R-IeXBoPpDzzuNBCkEEw/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -195,6 +194,7 @@
         .catch(error => console.error('Error!', error.message))
     })
     </script>
+
     <script>
         function opentab(tabname, event){
     for(let tablink of tablinks){
@@ -210,6 +210,7 @@
 }
 
 // Assuming you have defined 'sidemenu' elsewhere in your code
+
 var sidemenu = document.getElementById("sidemenu");
 
 var tablinks = document.getElementsByClassName("tab-links");
@@ -238,5 +239,6 @@ document.addEventListener("click", function(event) {
 });
 
     </script>
+    
 </body>
 </html>
