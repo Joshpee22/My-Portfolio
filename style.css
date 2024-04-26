@@ -12,10 +12,12 @@ body{
     background: #080808;
     color: #fff;
 }
+
+
 @keyframes backgroundAnimation {
-    0% { background-image: url(/images/technology-8676538_1920.jpg); }
-    50% { background-image: url(/images/colorful.jpg); }
-    100% { background-image: url(/images/podcast-8520409_1920.jpg); }
+    0% { background-image: url(/images/background-3048816_1920.jpg); }
+    50% { background-image: url(/images/light-1283987_1920.jpg); }
+    100% { background-image: url(/images/coffee-3047385_1920.jpg); }
 }
 
 #header {
