@@ -1,245 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/24fe7adff4.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/IMG-20240211-WA0018.jpg" alt="logo" class="logo">
-                <ul  id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Services">Services</a></li> <!-- Fixed typo here -->
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text"> <!-- Moved inside the header -->
-                <p>Frontend Developer</p>
-                <h1>Hi, I'm <span>Stephen</span><br>Joshua From Nigeria.</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- boxicons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Stephen Joshua | Portfolio</title>
+  </head>
+  <body>
+    <!-- header design -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Joshpee</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#certifications" class="nav__link">Certifications</a>
+            </li>
+            
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I am <span class="home__title-color">Stephen Joshua</span><br />
+            Online marketer
+          </h1>
+
+          <a href="#contact" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/stephenosayijoshua/"
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/flozy.kuts"
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://instagram.com/flowflozy?igshid=MzNlNGNkZWQ4Mg=="
+            target="_blank"
+            class="home__social-icon"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 280 259"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <image
+                class="home__blob-img"
+                href="images/josh-suite.jpg"
+                alt="Stephen Joshua"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="images/jsohpee-selfie.jpg" alt="Stephen Joshua Selfie" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'am Stephen Joshua</h2>
+            <p class="about__text">
+              I'm an Online Marketing Manager with 8 years in the music industry and 1 year in digital content creation and SEO performance. 
+              I enjoy creating social media footprints, copywriting, and optimizing web content to generate organic traffic.
+              In 2023, I started as a software engineer with ALX, gaining skills in problem-solving and technology-driven innovation.
+              My passion for storytelling led me to pursue Mass Communication, aiming to bridge technology and communication.
+              Recently, I enrolled in a digital marketing course at Ensign College to further enhance my skills. I aspire to become a brand manager,
+              leveraging my expertise to create compelling narratives and drive brand growth.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Professional Skills</h2>
+            <p class="skills__text">
+              I have excellent experience using online marketing tools in
+              meeting company's metrics and KPI.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-carousel skills__icon"></i>
+                <span class="skills__name">Social media Ads</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
             </div>
-        </div>
-     </div>
-
-
-     <!------About Me-->
-
-     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="./images/software-3663509_1920.jpg" alt="pic">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm experienced in HTML, CSS, python, Javascript and Bootstrap. I am highly resourceful, flexible, innovative and ethusiastic individual
-                        who possesses a considerable amount of knowledge, experience and creative skills. I am always eager to learn new tecnologies, skills, or experiencing new cultures.
-                    </p>
-                    <a href="./Learn More/About.html">READ MORE</a>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-
-                            <p class="tab-links"  onclick="opentab('Education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="Skills">
-                            <ul>
-                                <li><span>Web Development</span><br>Web app Development</li>
-                                <li><span>Technical Writer</span><br>Writing Proficiency and Technical Aptitude</li>
-                                <li><span>Social Media Manager</span><br>Content Creation and Curation</li>
-                            </ul>
-                        </div>
-                       
-                        <div class="tab-contents" id="Education">
-                            <ul>
-                                <li><span>Ensign College</span><br>B.A Communication</li>
-                                <li><span>ALX</span><br>Software Engineering</li>
-                                <li><span>BYU PathwayConnect</span><br>Technical Writing</li>
-                            </ul>
-                        </div>
-                </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="fa-solid fa-code"></i>
+                <span class="skills__name">SEO & WebSite Design</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
             </div>
-        </div>
-     </div>
 
-
-    <!---------- Services-->
-    <div id="Services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-terminal"></i>
-                    <h2>Web Design</h2>
-                    <p>Creating a web friendly interface for all user to enjoy with
-                        some interesting functionality</p>
-                    <a href="./Learn More/Web_Design.html">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-pen"></i>
-                    <h2>Tecnical Writer</h2>
-                    <p>Familiar with SEO (Search Engine Optimization) principles and writing for online platforms. 
-                        This includes using keywords strategically, formatting content for readability, and understanding
-                         online publishing tools and platforms.</p>
-                    <a href="./Learn More/Writer.html">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-hashtag"></i>
-                    <h2>Social Media Manager</h2>
-                    <p>Develop engaging content for various social media platforms, 
-                        including text, image, and video content. </p>
-                    <a href="./Learn More/soical_medial.html">Learn more</a>
-                </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-layer skills__icon"></i>
+                <span class="skills__name">HubSpot</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
             </div>
-        </div>
-    </div>
 
-
-    <!---------Portfolio----->
-
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/ai-generated-8640900_1920.jpg">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>the app connects you to the talented people around the world. download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-
-                </div>
-                <div class="work">
-                    <img src="images/proCon.png">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>the app connects you to the talented people around the world. download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-
-
-                </div>
-                <div class="work">
-                    <img src="images/technology-8676538_1920.jpg">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>the app connects you to the talented people around the world. download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-
-
-                </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bx-layer skills__icon"></i>
+                <span class="skills__name">Html/CSS & Javascript</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">100%</span>
+              </div>
             </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
 
-    <!------------Contact------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-paper-plane"></i>owobujoshua2017@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+2349166870023</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="" download class="btn btn2">Download Cv</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-mailchimp skills__icon"></i>
+                <span class="skills__name">MailChimp</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
             </div>
+          </div>
+
+          <div>
+            <img src="images/social media.jpg" alt="Social Media" class="skills__img" />
+          </div>
         </div>
-        <div class="copyright">
-        <p>Joshpee &copy; 2024, All RIghts Reserved</p>    
+      </section>
+
+      <!--===== PROJECTS=====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="work__container bd-grid">
+          <a
+            href="https://docs.google.com/spreadsheets/d/1T1wMgAX2au0376C5HogXj2flLOZLf-VL5CzMJLqdbuY/edit?usp=sharing"
+            class="work__img"
+            target="_blank"
+          >
+            <img src="images/Campaign creator.jpg" alt="Campaign Creator" />
+          </a>
+          <a
+            href="https://www.canva.com/design/DAE71egr78A/1B8xUtvhCg-VmrE18nKGNg/view?utm_content=DAE71egr78A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton#1"
+            target="_blank"
+            class="work__img"
+          >
+            <img src="images/diggity-marketing.jpg" alt="Diggity Marketing" />
+          </a>
+          <a
+            href="https://lesmarketeurs.wixsite.com/seo-projects"
+            target="_blank"
+            class="work__img"
+          >
+            <img src="images/seo.jpg" alt="SEO Projects" />
+          </a>
+
+          <a
+            href="https://docs.google.com/document/d/15towp_4KppqCu3jw9r1qkzLnSuvszT-o6rvT01btM2A/edit"
+            target="_blank"
+            class="work__img"
+          >
+            <img src="images/mailchimp.jpg" alt="MailChimp Project" />
+          </a>
+          <a
+            href="https://www.canva.com/design/DAFNUFr2LtY/cdQWJrUc08J-2v_pkhEtAw/view?analyticsCorrelationId=96c80256-605d-4e46-a730-616ccbd7d26e"
+            target="_blank"
+            class="work__img"
+          >
+            <img src="images/marketing.jpg" alt="Marketing Project" />
+          </a>
+          <a
+            href="https://www.canva.com/design/DAE8WbQayYY/jsddeyogusb50jloXVcEIg/edit?utm_content=DAE8WbQayYY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            target="_blank"
+            class="work__img"
+          >
+            <img src="images/work5.jpg" alt="Work Project" />
+          </a>
         </div>
-    </div>
-    
-   
-    
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyudCqxFBR8ncSE2u9KvuIbfYRKUd4ScagaHswnle1Wyr00l1R-IeXBoPpDzzuNBCkEEw/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-             msg.innerHTML = "";
-            }, 5000);
-            form.reset()
-    
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-    </script>
+      </section>
 
-    <script>
-        function opentab(tabname, event){
-    for(let tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
+     <!-----CERTIFICATIONS-->
+<section class="work section" id="certifications">
+  <h2 class="section-title">Certifications</h2>
+  <div class="certifications__container bd-grid">
+    <a href="https://path.byupathway.org/portal/api/Certificate/GetPersonCertificate?providerProgramId=340" target="_blank" class="certifications__img">
+      <img src="images/BYU.png" alt="Certification 1" />
+      Pathway Coonect
+    </a>
+    <a href="http://127.0.0.1:5501/Stephen-Joshua/index.html#Certifications" target="_blank" class="certifications__img">
+      <img src="images/Ensign.png" alt="Certification 2" />
+      <p>Ensign College</p>
+    </a>
+    <a href="https://skillshop.credential.net/80f72f22-e0c5-4763-8dcf-b317c0d7c1d9" target="_blank" class="certifications__img">
+      <img src="images/google.png" alt="Certification 3" />
+      Google analytics 
+    </a>
+    <a href="https://intranet.alxswe.com/dashboards/my_curriculums" target="_blank" class="certifications__img">
+      <img src="images/alx.png" alt="Certification 4" />
+      <p>Software Engineer Alx</p>
+    </a>
+  </div>
+</section>
 
-    for(let tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
 
-    document.getElementById(tabname).classList.add("active-tab");
-    event.currentTarget.classList.add("active-link");
-}
 
-// Assuming you have defined 'sidemenu' elsewhere in your code
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
 
-var sidemenu = document.getElementById("sidemenu");
+        <section class="contact-us">
+          <div class="row">
+            <div class="contact-col">
+              <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                  <h5>Address: Ogba, Ikeja Lagos, Nigeria</h5>
+                </span>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                  <h5>Phone: +2349166870023</h5>
+                </span>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                  <h5>Email: owobujoshua2017@gmail.com</h5>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <p class="footer__copy">&#169; 2024 Stephen Joshua. All rights reserved</p>
+    </footer>
 
-function openmenu() {
-    sidemenu.style.right = "0";
-}
+    <!-- SCROLL REVEAL -->
 
-function closemenu() {
-    sidemenu.style.right = "-200px";
-}
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-var menuItems = document.querySelectorAll("#sidemenu li a");
-
-menuItems.forEach(function(item) {
-    item.addEventListener("click", function(event) {
-        closemenu();
-    });
-});
-
-document.addEventListener("click", function(event) {
-    if (!sidemenu.contains(event.target) && event.target !== document.querySelector(".fa-solid.fa-bars")) {
-        closemenu();
-    }
-});
-
-    </script>
-    
-</body>
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
+  </body>
 </html>
